@@ -1,0 +1,129 @@
+/** General Styles **/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin: 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#themeToggle {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#themeToggle:hover {
+  background: #777;
+}
+
+main {
+  padding: 20px;
+}
+
+.section {
+  border: 2px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #eef6f7;
+  transition: background-color 0.5s;
+}
+
+.section h2 {
+  color: #444;
+}
+
+/* Gallery */
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Embedded Gallery */
+.embedded-frame {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+/* Bible Verse Section */
+.bible-verse {
+  font-size: 1.2em;
+  font-style: italic;
+  border-left: 5px solid #7baec1;
+  padding: 15px;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+body.dark-mode .section {
+  background-color: #444;
+}

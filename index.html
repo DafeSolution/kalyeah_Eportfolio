@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleah Shelton HQ</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="navbar">
+    <div class="logo">
+      <img src="/assets/images/logoBW1.png" alt="Kayleah Shelton Logo" class="logo-img">
+      <h1>Kayleah Shelton HQ</h1>
+    </div>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+    <!-- Background Audio -->
+<audio id="backgroundMusic" loop autoplay>
+  <source src="assets/music/Kendrick Lamar - Not Like Us [ Official Instrumental ] BEST.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Awards Slideshow Above Experience -->
+<!-- Awards Slideshow Above Experience -->
+<section id="slideshow-section">
+  <div class="slideshow-container">
+    <img class="slide active" src="assets/images/award1.jpeg" alt="Deloitte Discover 2 Internship">
+    <img class="slide" src="assets/images/award2.jpeg" alt="Award 2">
+    <img class="slide" src="assets/images/vote2.jpg" alt="Award 3">
+    <img class="slide" src="assets/images/award4.jpeg" alt="Award 4">
+    <img class="slide" src="assets/images/votenew.png" alt="Award 4">
+    <img class="slide" src="assets/images/vote2.jpg" alt="Award 4">
+    <img class="slide" src="assets/images/award5.jpeg" alt="Award 5">
+    <img class="slide" src="assets/images/award6.jpeg" alt="Award 6">
+  </div>
+</section>
+
+<section id="achievements" class="section">
+  <h2>Student Government Platform</h2>
+  <div id="galleryPreview" class="gallery">
+    <figure>
+      <img src="assets/images/vote1.jpg" alt="Achievement 1" onclick="openLightbox('assets/images/vote1.jpg')">
+      <figcaption>
+        <strong>Ignite</strong> - <a href="https://example.com/award1" target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="assets/images/voteposter.jpg" alt="Achievement 2" onclick="openLightbox('assets/images/SGA4.jpeg')">
+      <figcaption>
+        <strong>1851</strong> - <a href="https://www.instagram.com/reel/C77GaxbOf00/?igsh=Mnh3NTg3bmcyNXR3 target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="assets/images/vote2.jpg" alt="Achievement 3" onclick="openLightbox('assets/images/voteposter.jpg')">
+      <figcaption>
+        <strong>Excellence</strong> - <a href="https://example.com/award3" target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <a href="platform.html" class="view-more">View My Platform→</a>
+  </div>
+</section>
+
+
+<section id="bibleVerse" class="section">
+  <h2>Bible Verse of the Day</h2>
+  <div id="bibleVerseContent" class="bible-verse">
+    <p>Loading verse...</p>
+  </div>
+</section>
+
+<section id="achievements" class="section">
+  <h2>Achievements</h2>
+  <div id="galleryPreview" class="gallery">
+    <figure>
+      <img src="assets/images/achievement1.jpeg" alt="Achievement 1" onclick="openLightbox('assets/images/achievement1.jpeg')">
+      <figcaption>
+        <strong>Deloitte Discovery II Internship</strong> - <a href="https://example.com/award1" target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="assets/images/achievement2.jpeg" alt="Achievement 2" onclick="openLightbox('assets/images/achievement2.jpeg')">
+      <figcaption>
+        <strong>NASAP Student Leadership Institute </strong> - <a href="https://www.instagram.com/reel/C77GaxbOf00/?igsh=Mnh3NTg3bmcyNXR3 target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="assets/images/achievement3.jpeg" alt="Achievement 3" onclick="openLightbox('assets/images/achievement3.jpeg')">
+      <figcaption>
+        <strong>NABA Reginal Conference 2024</strong> - <a href="https://example.com/award3" target="_blank">Read more</a>
+      </figcaption>
+    </figure>
+
+    <a href="gallery.html" class="view-more">View Full Gallery →</a>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" class="lightbox-content">
+</div>
+
+
+<!-- Education Section -->
+<section id="education" class="section">
+  <h2>Education</h2>
+  <p><strong>University of the District of Columbia</strong>, Expected Graduation: May 2026</p>
+  <p>Washington, DC</p>
+  <p><strong>Bachelor of Business Administration in Accounting [&] Finance</strong></p>
+  <p>Concentration: Logistics [&] International Trade</p>
+  <p><strong>GPA:</strong> 4.0 | <strong>Honors:</strong> Dean’s List</p>
+  <p><strong>Relevant Coursework:</strong> International Finance, Security Analysis, Financial Accounting, Managerial Accounting, Introduction to Management, Discover Diversity</p>
+
+  <h3>Leadership Experience</h3>
+  <ul>
+    <li>Undergraduate Student Government Secretary</li>
+    <li>University Student Ambassador</li>
+    <li>President of Industry Practicum</li>
+    <li>UDC NABA Chapter Secretary</li>
+    <li>Caribbean Student Association Vice President</li>
+    <li>HBCUniverse Campus Ambassador</li>
+  </ul>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <h3>University of the District of Columbia</h3>
+  <p><strong>Student Intern</strong> | Washington, DC | January 2023 - Present</p>
+  <ul>
+    <li>Actively assist faculty by proctoring examinations, coordinating events, and supporting students, contributing to a positive academic environment.</li>
+  </ul>
+
+  <h3>White House HBCU Scholar</h3>
+  <p>July 2024 - Present</p>
+  <ul>
+    <li>Selected as a distinguished leader among a competitive cohort of students based on academic excellence, campus leadership, civic engagement, and entrepreneurial spirit.</li>
+    <li>Act as an ambassador for the Initiative and my HBCU, disseminating information, resources, and opportunities across campus.</li>
+  </ul>
+
+  <h3>Deloitte</h3>
+  <p><strong>Discovery Intern</strong> | Tysons, VA</p>
+  <ul>
+    <li>Collaborated on innovative projects aimed at enhancing Deloitte's tax practice, proposing actionable strategies for improved efficiency and client service.</li>
+    <li>Gained in-depth exposure to various service lines, developing key skills in data analysis and client engagement through hands-on experience.</li>
+    <li>Networked with industry professionals, gaining insights into career pathways and best practices in the professional services field.</li>
+  </ul>
+
+  <h3>Deloitte</h3>
+  <p><strong>HBCU Emerging Leader</strong> | Westlake, TX | April 2023</p>
+  <ul>
+    <li>Competed in an intensive accounting competition that sharpened critical thinking and interview skills.</li>
+    <li>Demonstrated the ability to perform under pressure and effectively communicate solutions in high-stakes scenarios.</li>
+  </ul>
+
+  <h3>National Science Foundation</h3>
+  <p><strong>Research Intern</strong> | Washington, DC</p>
+  <ul>
+    <li>Conducted rigorous research on human-robot interaction through innovative storytelling and dramatic methods.</li>
+    <li>Presented findings at the NEDSI 2023 conference as a freshman, placing in the top 5 among master's-level competitors.</li>
+    <li>Played a key role in planning and executing NEDSI conferences, enhancing the overall participant experience.</li>
+  </ul>
+
+  <h3>Ernst [&] Young</h3>
+  <p><strong>Discover EY / Expedition EY Participant</strong> | Nashville, TN</p>
+  <ul>
+    <li>Engaged in a prestigious program featuring a comprehensive conference and virtual sessions.</li>
+    <li>Developed insights into corporate practices and explored career pathways within a leading global firm.</li>
+  </ul>
+
+  <h3>Community Outreach</h3>
+  <ul>
+    <li>UDC Swim Club</li>
+    <li>Logistics and International Trade Ambassador</li>
+    <li>Jamaica National Association Leadership Development Award Recipient</li>
+    <li>Thurgood Marshall College Fund Leadership Institute, DEVCON [&] 4th Cohort Meta Scholar</li>
+    <li>UDC VTA/TCE TAX clinic volunteer</li>
+  </ul>
+</section>
+
+
+
+
+    
+  
+
+    
+    
+  </main>
+
+
+
+  <footer class="section">
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="bubbly-dynamo-404601"
+      agent-id="c3cbea36-db19-42be-acd8-2556d9ebe987"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+       chat-title="kayleah&#x27;s Assitant">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+  </footer>
+</body>
+</html>

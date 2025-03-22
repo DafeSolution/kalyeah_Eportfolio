@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayleah Shelton - IGNITE 1851!</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #4a4a4a; color: white; overflow-x: hidden; }
+
+    /* NAVBAR */
+    header { background-color: #222; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 50px; margin-right: 10px; }
+    .logo h1 { font-size: 1.5em; color: white; }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a { color: white; text-decoration: none; font-size: 1em; }
+    nav ul li a:hover { text-decoration: underline; }
+    #themeToggle { background-color: #ff4b2b; border: none; color: white; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    #themeToggle:hover { background-color: #ff416c; }
+
+    /* SLIDESHOW */
+    .slideshow-container { max-width: 1000px; margin: 20px auto; position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+    .slides { display: none; }
+    .slide-img { width: 100%; height: 600px; object-fit: cover; filter: brightness(75%); }
+    .text-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; }
+    .text-overlay h1 { font-size: 2.8em; margin-bottom: 10px; }
+    .text-overlay p { font-size: 1.2em; max-width: 700px; margin: auto; }
+    .btn { margin-top: 20px; padding: 12px 30px; background-color: #ff4b2b; border: none; color: white; font-size: 1em; border-radius: 30px; text-decoration: none; display: inline-block; transition: 0.3s; }
+    .btn:hover { background-color: #ff416c; }
+    .dot-container { text-align: center; margin-top: 15px; }
+    .dot { height: 12px; width: 12px; margin: 0 4px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.3s; }
+    .active { background-color: #ff4b2b; }
+
+    /* PLATFORM & LINKS */
+    .platform-section { max-width: 1000px; margin: 40px auto; text-align: center; }
+    .platform-section h2 { color: #ff4b2b; margin-bottom: 15px; }
+    .platform-section p { font-size: 1.1em; margin-bottom: 20px; }
+    .links { display: flex; flex-direction: column; align-items: center; margin-top: 20px; }
+    .links a { color: #ffcc00; margin: 5px 0; text-decoration: none; font-size: 1em; }
+    .links a:hover { text-decoration: underline; }
+
+    /* CHATBOT */
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">
+      <img src="/assets/images/logoBW1.png" alt="Kayleah Logo">
+      <h1>Kayleah Shelton HQ</h1>
+    </div>
+  
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#links">Resources</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="assets/music/Kendrick Lamar - Not Like Us [ Official Instrumental ] BEST.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- SLIDESHOW -->
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slides fade">
+      <img src="/assets/images/vote2.jpg" class="slide-img" />
+      <div class="text-overlay">
+        <h1>IGNITE 1851</h1>
+        <p>Leadership. Service. Dedication. Together, let's amplify UDC!</p>
+        <a href="#platform" class="btn">See My Vision</a>
+      </div>
+    </div>
+    <div class="slides fade">
+      <img src="/assets/images/votenew.png" class="slide-img" />
+      <div class="text-overlay">
+        <h1>Vote Kayleah Shelyon</h1>
+        <p>Building a UDC where every Firebird thrives.</p>
+        <a href="#links" class="btn">Scholarships & Resources</a>
+      </div>
+    </div>
+    <div class="slides fade">
+      <img src="/assets/images/SGA9.jpeg" class="slide-img" />
+      <div class="text-overlay">
+        <h1>Let’s IGNITE 1851!</h1>
+        <p>Your voice, your campus, your leadership.</p>
+        <a href="#links" class="btn">Join The Movement</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dot-container">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+  <!-- PLATFORM, LINKS, CHATBOT -->
+  <div class="platform-section" id="platform">
+    <h2>I.G.N.I.T.E 1851: Igniting Firebird Excellence</h2>
+    <p>With two terms as USGA Secretary, I’ve gained the experience to lead effectively. IGNITE 1851 is a movement to unite our campus, amplify student voices, and create a stronger UDC.</p>
+
+    <p><strong>💰 Increasing Financial Accessibility</strong><br/>
+      ✔️ Create a Scholarship Support Sub-Team for funding.<br/>
+      ✔️ Improve access to emergency financial resources.</p>
+
+    <p><strong>📚 Growing Access to Resources & Opportunities</strong><br/>
+      ✔️ Build a platform for scholarships, internships, and campus services.<br/>
+      ✔️ Strengthen the Firebird Market & Closet for essentials and professional attire.</p>
+
+    <p><strong>🧠 Nurturing Mental Health & Career Readiness</strong><br/>
+      ✔️ Expand wellness initiatives like “Wellness Wednesdays.”<br/>
+      ✔️ Advocate for career fairs tailored to all colleges and launch a Career program.</p>
+
+    <p><strong>🔥 Igniting 1851 Pride</strong><br/>
+      ✔️ Organize spirit weeks, pep rallies, and create athletics support committee.<br/>
+      ✔️ Launch "Igniting 1851 Pride" to celebrate Firebird experiences.</p>
+
+    <p><strong>🤝 Teamwork & Togetherness</strong><br/>
+      ✔️ Create a Club Collaboration Initiative.<br/>
+      ✔️ Host networking nights and interactive events.</p>
+
+    <p><strong>🎉 Engaging Campus Life</strong><br/>
+      ✔️ Launch 1851 Live. A weekly campus event featuring music, food, and interactive activities.<br/>
+      ✔️ Transform space into “The Nest,” a student lounge for relaxation.</p>
+  </div>
+    <!-- Links Section -->
+    <div class="platform-section" id="links">
+      <h2>📎 Resources & Links</h2>
+  
+      <h3>💡 Scholarships</h3>
+      <div class="links">
+        <a href="https://linktr.ee/scholarshipmoneyforstudents" target="_blank">Scholarship Money Linktree</a>
+        <a href="https://www.instagram.com/newfindswithnia?igsh=d2h5Nm0zaHI4eWY0" target="_blank">New Finds with Nia (Scholarships)</a>
+        <a href="https://linktr.ee/accessscholarships" target="_blank">Access Scholarships</a>
+        <a href="https://www.tmcf.org/students-alumni/scholarships/open-scholarships/" target="_blank">TMCF Scholarships</a>
+        <a href="https://uncf.org/scholarships" target="_blank">UNCF Scholarships</a>
+        <a href="https://hbcumoneyguide.com/hbcu-money-guide-newsletter/" target="_blank">HBCU Money Guide</a>
+        <a href="https://linktr.ee/krscholars" target="_blank">KR Scholars</a>
+        <a href="https://tr.ee/grUjgss0aO" target="_blank">More Scholarships</a>
+      </div>
+  
+      <h3>💼 Internships</h3>
+      <div class="links">
+        <a href="http://internxl.org/HBCU" target="_blank">InternXL for HBCUs</a>
+        <a href="https://www.instagram.com/dearrattler" target="_blank">Dear Rattler Internship Info</a>
+        <a href="https://www.instagram.com/hbcunc" target="_blank">HBCU NC Internships</a>
+        <a href="https://www.instagram.com/hbcuniverse.summit" target="_blank">HBCUniverse Summit</a>
+        <a href="https://www.instagram.com/hbcufirst" target="_blank">HBCU First</a>
+        <a href="https://linktr.ee/cbcfinc" target="_blank">CBCF Internships</a>
+        <a href="https://www.tmcf.org/students-alumni/internships/" target="_blank">TMCF Internships</a>
+        <a href="https://linktr.ee/internqueenteam" target="_blank">Intern Queen Team</a>
+        <a href="https://welcome.aifsabroad.com/landing/instagram-bio-landing" target="_blank">AIFS Abroad Internships</a>
+      </div>
+  
+      <h3>🏫 UDC Resources</h3>
+      <div class="links">
+        <a href="https://udc.scholarshipuniverse.com/student/dashboard" target="_blank">UDC Scholarships Dashboard</a>
+        <a href="https://udc.presence.io/" target="_blank">UDC Presence</a>
+        <a href="https://www.udc.edu/students/student-success/resources/navigate" target="_blank">Navigate UDC</a>
+        <a href="https://udc.upswing.io/" target="_blank">UDC Tutoring & Academic Support</a>
+        <a href="https://www.udc.edu/students/counseling-wellness/" target="_blank">UDC Counseling & Wellness</a>
+        <a href="https://www.udcfirebirds.com/landing/index" target="_blank">UDC Athletics</a>
+        <a href="https://www.youtube.com/@UniversityofDC" target="_blank">UDC YouTube</a>
+        <a href="https://tr.ee/LpN8dA0JSc" target="_blank">Additional UDC Links</a>
+      </div>
+  
+      <h3>🏆 Firebird Athletics & Campus Spirit</h3>
+      <div class="links">
+        <a href="https://www.udcfirebirds.com/landing/index" target="_blank">🔥 Explore UDC Firebird Athletics & Events</a>
+      </div>
+  
+      <h3>📽️ Presentations & Media</h3>
+      <div class="links">
+        <a href="https://www.instagram.com/reel/DGBsqntMc7y/" target="_blank">Campaign Reel Instagram</a>
+        <a href="https://youtu.be/c-YRQ2rteaY" target="_blank">Presentation Video #1</a>
+        <a href="https://youtu.be/1ucpd66PTmM" target="_blank">Presentation Video #2</a>
+      </div>
+    </div>
+  
+    <!-- Slideshow Script -->
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+      }
+    </script>
+  
+    <!-- Chatbot Assistant -->
+    <df-messenger
+      project-id="bubbly-dynamo-404601"
+      agent-id="c3cbea36-db19-42be-acd8-2556d9ebe987"
+      language-code="en">
+      <df-messenger-chat-bubble chat-title="Kayleah's Assistant">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+  
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+  <!-- (Include the FULL PLATFORM + LINKS section and CHATBOT from earlier message) -->
+
+  <!-- CHATBOT ASSISTANT -->
+  <df-messenger
+    project-id="bubbly-dynamo-404601"
+    agent-id="c3cbea36-db19-42be-acd8-2556d9ebe987"
+    language-code="en">
+    <df-messenger-chat-bubble chat-title="Kayleah's Assistant"></df-messenger-chat-bubble>
+  </df-messenger>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <!-- SLIDESHOW SCRIPT -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000);
+    }
+  </script>
+
+</body>
+</html>
